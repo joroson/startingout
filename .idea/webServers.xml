@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c0bfd4c1-f6cc-476e-8fc7-ec7185a03fb2" name="SSD Nodes 1" url="http://vps1.10kinds.tech/">
+        <fileTransfer rootFolder="/home/joroson/pycharm" accessType="SFTP" host="node1.10kinds.tech" port="22" sshConfigId="ec95d512-8a5e-4d73-b364-8eacd3839757" sshConfig="joroson@node1.10kinds.tech:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

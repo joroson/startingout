@@ -1,0 +1,3 @@
+[run]
+source = startingout
+omit = startingout/test*

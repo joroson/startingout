@@ -1,0 +1,18 @@
+<div metal:use-macro="load: ../shared/_main.pt">
+
+<div metal:fill-slot="page-title" tal:omit-tag=""><title>Joe's Web App</title></div>
+
+<div metal:fill-slot="additional-css" tal:omit-tag=""><!-- additional page CSS --></div>
+
+    <div metal:fill-slot="content" tal:omit-tag="">
+
+        <div id="home-hero" class="container-fluid d-xl-flex flex-column justify-content-xl-center align-items-xl-center min-vh-100">
+            <h1>This is the <span class="display-1">register</span> page</h1>
+            <a class="btn btn-primary" role="button" href="/account">Account home</a>
+        </div>
+
+    </div>
+
+    <div metal:fill-slot="additional-js" tal:omit-tag=""></div>
+    
+</div>

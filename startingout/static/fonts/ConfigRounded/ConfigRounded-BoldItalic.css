@@ -1,0 +1,12 @@
+/* Webfont: ConfigRounded-BoldItalic */@font-face {
+    font-family: 'ConfigRounded';
+    src: url('ConfigRounded-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('ConfigRounded-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('ConfigRounded-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('ConfigRounded-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('ConfigRounded-BoldItalic.svg#ConfigRounded-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

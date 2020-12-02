@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="node1.10kinds.tech" id="ec95d512-8a5e-4d73-b364-8eacd3839757" keyPath="D:\SyncThing\PKI\ssdnodes\ssdnodes" port="22" nameFormat="DESCRIPTIVE" username="joroson" />
+    </configs>
+  </component>
+</project>

@@ -1,0 +1,34 @@
+<div metal:use-macro="load: shared/_main.pt">
+    <div metal:fill-slot="content">
+
+        <div class="content">
+
+            <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-3">WHOA there!</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex flex-column align-items-center">
+                        <picture>
+                            <source srcset="https://media.10kinds.tech/file/q_100,w_700/404-q.gif 700w" media="(min-width: 1200px)" sizes="700px">
+                            <source srcset="https://media.10kinds.tech/file/q_100,w_600/404-q.gif 600w" media="(min-width: 992px)" sizes="600px">
+                            <source srcset="https://media.10kinds.tech/file/q_100,w_500/404-q.gif 500w" media="(min-width: 768px)" sizes="500px">
+                            <source srcset="https://media.10kinds.tech/file/q_100,w_400/404-q.gif 400w" media="(min-width: 576px)" sizes="400px">
+                            <source srcset="https://media.10kinds.tech/file/q_100,w_300/404-q.gif 300w" media="(min-width:300px)" sizes="300px">
+                            <img class="img-fluid" src="https://media.10kinds.tech/file/q_100,w_250/404-q.gif">
+                        </picture>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-3">How did you get here?!</h1>
+                    </div>
+                </div>
+		    </div>
+
+        </div>
+
+    </div>
+</div>

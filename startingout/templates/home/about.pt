@@ -1,0 +1,17 @@
+<div metal:use-macro="load: ../shared/_main.pt">
+
+<div metal:fill-slot="page-title" tal:omit-tag=""><title>About Joe's Web App</title></div>
+
+<div metal:fill-slot="additional-css" tal:omit-tag><!-- additional page CSS --></div>
+
+    <div metal:fill-slot="content">
+
+        <div class="container d-xl-flex justify-content-xl-center align-items-xl-center min-vh-100">
+            <h1>This is the about page</h1>
+        </div>
+
+    </div>
+
+<div metal:fill-slot="additional-js" tal:omit-tag><!-- additional page JS --></div>
+    
+</div>

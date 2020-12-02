@@ -1,0 +1,39 @@
+<div metal:use-macro="load: ../shared/_main.pt">
+
+<div metal:fill-slot="page-title" tal:omit-tag=""><title>Weight Conversion Mini Script</title></div>
+
+<div metal:fill-slot="additional-css" tal:omit-tag=""><!-- additional page CSS --></div>
+
+<div metal:fill-slot="content" tal:omit-tag="">
+
+    <div id="scripts-hero" class="container-fluid d-xl-flex flex-column justify-content-xl-center align-items-xl-center min-vh-100">
+        <!--<img class="img-fluid" src="${request.static_url('startingout:static/joe.rbnsn.uk_logo.svg')}"/>-->
+        <h1 class="display-3">Mini-scripts</h1>
+        <p class="lead px-5">What are mini-scripts? These are the small programs that I have written or find useful that
+        I have finally gotten around to putting up on a website instead of running in Jupyter or a repl.</p>
+        <div><a class="btn btn-primary" role="button" href="mini-scripts/weight-conversion">Weight Conversion</a></div>
+    </div>
+
+</div>
+
+<div metal:fill-slot="additional-js" tal:omit-tag="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+    <script>
+        VANTA.TRUNK({
+          el: "#scripts-hero",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xe6d181,
+          backgroundColor: 0xffffff,
+          spacing: 10.00,
+          chaos: 4.00
+        })
+    </script>
+</div>
+</div>

@@ -1,0 +1,38 @@
+<div metal:use-macro="load: ../shared/_main.pt">
+
+    <div metal:fill-slot="page-title" tal:omit-tag=""><title>Joe's Web App</title></div>
+
+    <div metal:fill-slot="additional-css" tal:omit-tag=""><!-- additional page CSS --></div>
+
+    <div metal:fill-slot="content" tal:omit-tag="">
+
+        <div id="account-home"
+             class="container-fluid d-xl-flex flex-column justify-content-xl-center align-items-xl-center min-vh-100">
+            <h1 class="text-white">This is the <span class="display-1">account home</span> page</h1>
+            <div class="d-flex">
+                <a class="btn btn-primary mx-2" role="button" href="/account/register">Register</a>
+                <a class="btn btn-primary mx-2" role="button" href="/account/login">Login</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div metal:fill-slot="additional-js" tal:omit-tag="">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+        <script>
+            VANTA.RINGS({
+                el: "#account-home",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00
+            })
+        </script>
+
+    </div>
+
+</div>

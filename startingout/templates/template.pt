@@ -1,0 +1,15 @@
+<div metal:use-macro="load: shared/main.pt">
+    <div metal:fill-slot="additional-css" tal:omit-tag><!-- additional page CSS --></div>
+
+    <div metal:fill-slot="content">
+
+        <div class="container d-xl-flex justify-content-xl-center align-items-xl-center min-vh-100">
+            <img class="img-fluid" src="${request.static_url('startingout:static/joe.rbnsn.uk_logo.svg')}"/>
+            <h1>main section</h1>
+        </div>
+
+    </div>
+
+    <div metal:fill-slot="additional-js" tal:omit-tag><!-- additional page JS --></div>
+    
+</div>
