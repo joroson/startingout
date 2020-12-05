@@ -1,6 +1,5 @@
+from pyramid.request import Request
 from pyramid.view import view_config
-
-from startingout.viewmodels.mini_scripts.mini_scripts_viewmodel import MiniScriptsViewModel
 
 
 @view_config(route_name='mini-scripts', renderer='startingout:templates/mini-scripts/index.pt')
@@ -9,58 +8,90 @@ def mini_scripts_index(_):
     return {}
 
 
-@view_config(route_name='mini-scripts/weight-conversion', renderer='startingout:templates/mini-scripts/weight-conversion.pt', request_method='GET')
-@view_config(route_name='mini-scripts/weight-conversion/', renderer='startingout:templates/mini-scripts/weight-conversion.pt', request_method='GET')
+@view_config(route_name='mini-scripts/weight-conversion',
+             renderer='startingout:templates/mini-scripts/weight-conversion.pt', request_method='GET')
+@view_config(route_name='mini-scripts/weight-conversion/',
+             renderer='startingout:templates/mini-scripts/weight-conversion.pt', request_method='GET')
 def weight_conversion_get(_):
     # vm = MiniScriptsViewModel(request)
     # return vm.to_dict()
+
     return {
         'weight': None,
         'output_lbs': None,
         'output_sto': None,
         'output_slb': None,
         'output_ozs': None,
-        'output_kgs': None
+        'output_kgs': None,
+        'input_pou': None,
+        'input_sto': None,
+        'input_slb': None,
+        'input_ozs': None,
+        'input_kgs': None
     }
 
+    # return {}
 
-@view_config(route_name='mini-scripts/weight-conversion', renderer='startingout:templates/mini-scripts/weight-conversion.pt', request_method='POST')
-@view_config(route_name='mini-scripts/weight-conversion/', renderer='startingout:templates/mini-scripts/weight-conversion.pt', request_method='POST')
-def weight_conversion_post(request):
-    vm = MiniScriptsViewModel(request)
 
-    def convert_lbs(lbs):
+@view_config(route_name='mini-scripts/weight-conversion',
+             renderer='startingout:templates/mini-scripts/weight-conversion.pt', request_method='POST')
+@view_config(route_name='mini-scripts/weight-conversion/',
+             renderer='startingout:templates/mini-scripts/weight-conversion.pt', request_method='POST')
+def weight_conversion_post(request: Request):
+    def info():
+        print("request.POST: ", request.POST)
+        print("request.GET: ", request.GET)
+        print("request.matchdict: ", request.matchdict)
+
+    if request.POST.get('unit') == 'pounds':
+        lbs = request.POST.get('input-lb')
         lbs_float = float(lbs)
         lbs_int = int(lbs_float)
-        print(f"lbs expressed as an integer is {lbs_int} and as a float is {lbs_float}")
         con_lbs_st = lbs_int // 14
         con_lbs_lb = lbs_int % 14
         con_lbs_oz = (lbs_float % 14) - con_lbs_lb
         con_lbs_oz = int(round(con_lbs_oz, 2) // 0.0625)
         con_lbs_kg = round(lbs_float * 0.45359, 1)
-        print(f"{lbs}lbs is equal to {con_lbs_st}st, {con_lbs_lb}lbs, {con_lbs_oz}ounces. Or, {con_lbs_kg}kgs")
-        # return vm.to_dict()
+
+        info()
+
         return {
+            'output_lbs': None,
             'output_sto': con_lbs_st,
             'output_slb': con_lbs_lb,
             'output_ozs': con_lbs_oz,
-            'output_kgs': con_lbs_kg
+            'output_kgs': con_lbs_kg,
+            'input_pou': lbs_float,
+            'input_sto': None,
+            'input_slb': None,
+            'input_ozs': None,
+            'input_kgs': None
         }
 
-    def convert_sts(stones, pounds=0, ounces=0):
-        stones = int(stones)
-        pounds = int(pounds)
-        ounces = int(ounces)
+    elif request.POST.get('unit') == 'st-lbs-oz':
+        stones = int(request.POST.get('input-st-st'))
+        pounds = int(request.POST.get('input-st-lb'))
+        ounces = int(request.POST.get('input-st-oz'))
         con_sts_lb = (stones * 14) + pounds + (ounces * 0.0625)
-        con_sts_kg = round(con_sts_lb * 0.45359, 3)
-        print(f"{stones}st, {pounds}lbs {ounces}oz, is equal to {con_sts_lb}lbs or {con_sts_kg}kgs.")
-        # return vm.to_dict()
+        con_sts_kg = round(con_sts_lb * 0.45359, 2)
+
+        info()
+
         return {
             'output_lbs': con_sts_lb,
-            'output_kgs': con_sts_kg
+            'output_sto': None,
+            'output_slb': None,
+            'output_ozs': None,
+            'output_kgs': con_sts_kg,
+            'input_pou': None,
+            'input_sto': stones,
+            'input_slb': pounds,
+            'input_ozs': ounces,
+            'input_kgs': None
         }
 
-    def convert_kgs(kgs):
+    elif request.POST.get('unit') == 'kgs':
+        kgs = request.POST.get('input-kg')
         kgs_float = float(kgs)
         con_kgs_pd = kgs_float * 2.20462
         con_kgs_pd_int = int(con_kgs_pd)
@@ -68,34 +99,22 @@ def weight_conversion_post(request):
         con_kgs_lb = int(con_kgs_pd % 14)
         con_kgs_oz = con_kgs_pd - con_kgs_pd_int
         con_kgs_oz = int(round(con_kgs_oz, 2) // 0.0625)
-        print(f"{kgs}kgs is equal to {round(con_kgs_pd, 2)}lbs or {con_kgs_st}st, {con_kgs_lb}lbs, {con_kgs_oz}oz.")
-        # return vm.to_dict()
+
+        info()
+
         return {
             'output_lbs': round(con_kgs_pd, 2),
             'output_sto': con_kgs_st,
             'output_slb': con_kgs_lb,
             'output_ozs': con_kgs_oz,
+            'output_kgs': None,
+            'input_pou': None,
+            'input_sto': None,
+            'input_slb': None,
+            'input_ozs': None,
+            'input_kgs': kgs_float
         }
 
-    weight = request.POST.get('unit')
-    print(f"The conversion unit is {weight}.")
-
-    if request.POST.get('unit') == 'pounds':
-        # pounds = request.POST.get('input-lb')
-        # print(f"{pounds}lbs inputted.")
-        pounds = convert_lbs(request.POST.get('input-lb'))
-        # return vm.to_dict()
-        return pounds
-
-    if request.POST.get('unit') == 'st-lbs-oz':
-        st_lb_ozs = convert_sts(request.POST.get('input-st-st'), request.POST.get('input-st-lb'),
-                                request.POST.get('input-st-oz'))
-        # return vm.to_dict()
-        return st_lb_ozs
-
-    if request.POST.get('unit') == 'kgs':
-        kgs = convert_kgs(request.POST.get('input-kg'))
-        # return vm.to_dict()
-        return kgs
-
-    print(vm.to_dict())
+    else:
+        info()
+        return {}
