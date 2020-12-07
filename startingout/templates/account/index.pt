@@ -1,9 +1,9 @@
 <div metal:use-macro="load: ../shared/_main.pt">
 
-    <div metal:fill-slot="page-title" tal:omit-tag=""><title>Joe's Web App</title></div>
+    <title metal:fill-slot="page-title">Account Home</title>
 
     <div metal:fill-slot="additional-css" tal:omit-tag=""><!-- additional page CSS --></div>
-
+    <div metal:use-macro="load: ../shared/_preloader.pt"></div>
     <div metal:fill-slot="content" tal:omit-tag="">
 
         <div id="account-home"

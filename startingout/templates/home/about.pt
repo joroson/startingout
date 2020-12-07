@@ -1,17 +1,163 @@
 <div metal:use-macro="load: ../shared/_main.pt">
 
-<div metal:fill-slot="page-title" tal:omit-tag=""><title>About Joe's Web App</title></div>
+<title metal:fill-slot="page-title">About Joe's Web App</title>
 
-<div metal:fill-slot="additional-css" tal:omit-tag><!-- additional page CSS --></div>
+<div metal:fill-slot="additional-css" tal:omit-tag=""><!-- additional page CSS --></div>
 
-    <div metal:fill-slot="content">
+    <main metal:fill-slot="content">
 
-        <div class="container d-xl-flex justify-content-xl-center align-items-xl-center min-vh-100">
-            <h1>This is the about page</h1>
-        </div>
+        <section>
+            <div class=container>
+                <div class="row d-flex flex-column flex-md-row rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
+                    <div class="col d-flex justify-content-center justify-content-md-end">
+                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/coding.svg')}">
+                    </div>
+                    <div class="col d-flex flex-column justify-content-center">
+                        <h2 class="text-center text-md-left">About me</h2>
+                        <h4 class="text-center text-md-left">It started out as a brief overview. Honest.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class=container>
+                <div class=row>
+                    <div class="col rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
+                        <p class=text-justify>I am a father and husband living in Bognor Regis which is located on the south coast of England.</p>
+                        <p class=text-justify>I work for British Telecom as a product specialist for SIP-based trader voice solutions and I am interested in a wide range of topics relating to IT in general. I started out as an apprentice working in a general admin job at BT and once I completed my apprenticeship I felt like I needed to do more. On the recommendation of a family member who had recently retired from GCHQ I began studying for my CCNA. After about of year of study (I had never done anything involving data networks before) and two failed attempts, I finally passed my CCNA. I immediately started applying for jobs with my new CCNA only to have the same issue that many people have, I didn't have the experience required to get a job that actually used my qualification. After a year of applying for jobs inside BT (I know, I should have looked elsewhere too) I finally got an interview and a job with BT Trading Systems from a fantastic manager who was willing to take a chance on someone who was willing to learn. Working at BT Trading systems completely opened the door to a side of the IT industry that I never even considered had existed.</p>
+                        <p class=text-justify>Since then I have become far more interested in all aspects of computing. I started out with just networking but quickly got into virtualisation (initially with VMware) and Linux systems as we were using them at work. and from there I became intrigued by web design, development and hosting. From that I got into programming and created an online schedule for my team at work, this was written in PHP with a MySQL backend, a few bits of Javascript/jQuery and Bootstrap on the front. In all honesty I had looked into learning Python before this but I didn't get too far with it. It is now the Python renaissance as it were and I am trying to learn as much as I can about it at the moment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class=container>
+                <div class=row>
+                    <div class="col rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
+                        <h2 class=text-center>Certifications</h2>
+                    </div>
+                </div>
+                <div class=row>
+                    <div class="col d-flex flex-column justify-content-around align-items-center flex-sm-row rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
+                        <a class="btn btn-primary modal-buttons my-2" type=button data-toggle=modal data-target="#work-certs">
+                            <p class=text-white>Work related Certificates</p>
+                        </a>
+                        <a class="btn btn-primary modal-buttons my-2" type=button data-toggle=modal data-target="#misc-certs">
+                            <p class=text-white>Additional Certificates</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role=dialog tabindex=-1 id=work-certs>
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role=document>
+                    <div class=modal-content>
+                        <div class=modal-header>
+                            <h4 class=modal-title>Work related certificates</h4>
+                            <button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>×</span></button>
+                        </div>
+                        <div class=modal-body>
+                            <div class=container>
+                                <div class=row>
+                                    <div class=col>
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/Verba_Certificate_Diploma.png')}">
+                                    </div>
+                                </div>
+                                <div class=row>
+                                    <div class=col>
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/CCNP_certificate.png')}">
+                                    </div>
+                                </div>
+                                <div class=row>
+                                    <div class=col>
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/CCNA_Security_certificate.png')}">
+                                    </div>
+                                </div>
+                                <div class=row>
+                                    <div class=col>
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/CCNA_certificate.png')}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role=dialog tabindex=-1 id=misc-certs>
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role=document>
+                    <div class=modal-content>
+                        <div class=modal-header>
+                            <h4 class=modal-title>Additional Certificates</h4>
+                            <button type=button class=close data-dismiss=modal aria-label=Close><span
+                                    aria-hidden=true>×</span></button>
+                        </div>
+                        <div class=modal-body>
+                            <div class=container>
+                                <div class=row>
+                                    <div class=col>
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/intro_to_git.jpg')}">
+                                    </div>
+                                </div>
+                                <div class=row>
+                                    <div class=col>
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/pfSense-2-4-4_2019.jpg')}">
+                                    </div>
+                                </div>
+                                <div class=row>
+                                    <div class=col>
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/MikroTik-Security-Engineer-with-Labs.jpg')}">
+                                    </div>
+                                </div>
+                                <div class=row>
+                                    <div class=col>
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/udemy_python_network_programming.jpg')}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class=container>
+                <div class=row>
+                    <div class="col rounded-sm py-2 p-sm-2 p-lg-3 p-xl-4 m-xs-1 m-sm-2 m-md-3 m-lg-4 m-xl-5 bg-light">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <h2>Get in touch</h2>
+                            <h4>...if you want</h4>
+                        </div>
+                        <form class="d-flex flex-column" data-bss-recipient=1b293e8b5bfdff7a042ec58def62c179 data-bss-subject="joe.rbnsn.uk submission">
+                            <div class=form-row>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class=form-group>
+                                        <label for=first-name>First Name</label>
+                                        <input class=form-control type=text required="" name=first-name>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class=form-group>
+                                        <label for=last-name>Last Name</label>
+                                        <input class=form-control type=text required="" name=last-name>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class=form-group>
+                                        <label for=email>Email</label>
+                                        <input class=form-control type=email id=tm-validator name=email_field required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=form-group>
+                                <label for=message>Message</label>
+                                <textarea class=form-control name=message rows=10 required=""></textarea>
+                            </div>
+                            <button class="btn btn-primary btn-block btn-lg text-capitalize mx-auto" id=form-submit type=submit>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </div>
+    </main>
 
-<div metal:fill-slot="additional-js" tal:omit-tag><!-- additional page JS --></div>
+<div metal:fill-slot="additional-js" tal:omit-tag=""><!-- additional page JS --></div>
     
 </div>

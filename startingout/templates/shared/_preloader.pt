@@ -1,0 +1,34 @@
+<div metal:define-macro="preloader" tal:omit-tag="">
+    <div class="pre-loader">
+        <style>
+            .no-js #loader {
+                display: none;
+            }
+
+            .js #loader {
+                display: block;
+                position: absolute;
+                left: 100px;
+                top: 0;
+            }
+
+            .pre-loader {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background: url(${request.static_url('startingout:static/img/preloader.gif')}) center no-repeat #2c3e50;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script>
+            $(window).load(function () {
+                $(".pre-loader").fadeOut("slow");
+                ;
+            });
+        </script>
+    </div>
+</div>

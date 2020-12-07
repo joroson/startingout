@@ -1,0 +1,47 @@
+.btn.filter-button {
+  border: none;
+  margin: 3px;
+  background-image: linear-gradient(to left, #314755 -10%, #26a0da 110%);
+  font-size: clamp(16px, 1.964vw, 22px);
+  padding: 15px 25px;
+  color: white;
+}
+
+.btn.filter-button:hover {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da 100%);
+}
+
+.btn.bookmarks-button {
+  border: none;
+  background-image: linear-gradient(to right, #314755 -10%, #26a0da 110%);
+  color: white;
+  margin: 3px;
+  font-size: clamp(16px, 1.964vw, 22px);
+  padding: 15px 25px;
+  transition-duration: 0.5s;
+}
+
+.btn.bookmarks-button:hover {
+  background-image: linear-gradient(to left, #314755 -10%, #26a0da 110%);
+}
+
+.section-heading {
+  font-size: 3em;
+}
+
+.section-heading {
+}
+
+.btn.websites-button {
+  background: linear-gradient(to right, #009fff, #ec2f4b);
+  border: none;
+  color: white;
+  font-size: clamp(16px, 1.964vw, 22px);
+  margin: 3px;
+  padding: 15px 25px;
+  transition-duration: 0.5s;
+}
+
+.btn.websites-button:hover {
+  background: linear-gradient(to left, #009fff, #ec2f4b);
+}

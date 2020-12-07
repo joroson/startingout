@@ -1,14 +1,16 @@
 <div metal:define-macro="footer" tal:omit-tag="">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="text-center">I am a footer column that is rendered from the template</h1>
-                    </div>
-                    <div class="col">
-                        <h1 class="text-center">I am footer column 2</h1>
-                    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-column">
+                    <a class="footer-links" href="/">Home</a>
+                    <a class="footer-links" href="/bookmarks">Bookmarks</a>
+                    <a class="footer-links" href="/about">About</a>
+                    <a class="footer-links" href="/mini-scripts">Mini-scripts</a>
+                    <a class="sub-footer-links" href="/mini-scripts/weight-conversion">Weight Conversion</a>
                 </div>
+                <div class="col"></div>
             </div>
-        </footer>
+        </div>
+    </footer>
 </div>

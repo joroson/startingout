@@ -1,0 +1,271 @@
+<div metal:use-macro="load: ../shared/_main.pt">
+
+<title metal:fill-slot="page-title">Joe's Bookmarks</title>
+
+<div metal:fill-slot="additional-css" tal:omit-tag=""><link rel="stylesheet" href="${request.static_url('startingout:static/css/home/bookmarks.css')}"></div>
+
+    <main metal:fill-slot="content">
+        <section class="link-container my-2">
+            <div class=container>
+                <div class=row>
+                    <div class="col m-2 p-2 p-md-4" style="border-radius: 7px;box-shadow: 3px 3px 10px 0px #222222;">
+                        <h2 class=section-heading style="margin: 3px;">Filter by:</h2>
+                        <div class=filter-list>
+                            <button class="btn filter-button" type=button data-filter=.10kindstech>10 Kinds Tech</button>
+                            <button class="btn filter-button" type=button data-filter=.backgrounds>Backgrounds</button>
+                            <button class="btn filter-button" type=button data-filter=.colours>Colours</button>
+                            <button class="btn filter-button" type=button data-filter=.cool>Cool</button>
+                            <button class="btn filter-button" type=button data-filter=.design>Design</button>
+                            <button class="btn filter-button" type=button data-filter=.development>Development</button>
+                            <button class="btn filter-button" type=button data-filter=.domains>Domains</button>
+                            <button class="btn filter-button" type=button data-filter=.elite>Elite Dangerous</button>
+                            <button class="btn filter-button" type=button data-filter=.images>Images</button>
+                            <button class="btn filter-button" type=button data-filter=.jsil>JSIL</button>
+                            <button class="btn filter-button" type=button data-filter=.learning>Learning</button>
+                            <button class="btn filter-button" type=button data-filter=.local>Local</button>
+                            <button class="btn filter-button" type=button data-filter=.ltds>LTDs</button>
+                            <button class="btn filter-button" type=button data-filter=.misc>Misc</button>
+                            <button class="btn filter-button" type=button data-filter=.online-storage>Online Storage</button>
+                            <button class="btn filter-button" type=button data-filter=.personal-development>Personal Development</button>
+                            <button class="btn filter-button" type=button data-filter=.plugins>Plugins</button>
+                            <button class="btn filter-button" type=button data-filter=.python>Python</button>
+                            <button class="btn filter-button" type=button data-filter=.saas>SaaS</button>
+                            <button class="btn filter-button" type=button data-filter=.social-media>Social Media</button>
+                            <button class="btn filter-button" type=button data-filter=.video>Video</button>
+                            <button class="btn filter-button" type=button data-filter=.web-dev>Web Dev</button>
+                            <button class="btn filter-button" type=button data-filter=.wordpress>WordPress</button>
+                            <button class="btn filter-button" type=button data-filter=.work>Work</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=container>
+                <div class=row>
+                    <div class="col m-2 p-2 p-md-4">
+                        <div>
+                        <h2 class=section-heading style="margin: 3px;">Link(s):</h2>
+                        </div>
+                        <div class=isotope-content>
+                            <a class="btn bookmarks-button colours" role=button onclick="window.open('https://www.0to255.com/','_blank');">0to255 Colour Tool</a>
+                            <a class="btn bookmarks-button ltds plugins wordpress" role=button onclick="window.open('https://www.advancedcustomfields.com/','_blank');">ACF Pro</a>
+                            <a class="btn bookmarks-button plugins wordpress" role=button onclick="window.open('https://www.acf-extended.com/','_blank');">ACF Extended</a>
+                            <a class="btn bookmarks-button colours" role=button onclick="window.open('https://color.adobe.com/create/color-wheel/','_blank');">Adobe Colour Wheel</a>
+                            <a class="btn bookmarks-button ltds web-dev" role=button onclick="window.open('https://albacross.com/','_blank');">Albacross</a>
+                            <a class="btn bookmarks-button ltds" role=button onclick="window.open('https://appsumo.com/browse','_blank');">Appsumo</a>
+                            <a class="btn bookmarks-button jsil local work" role=button onclick="window.open('https://appsumo.com/browse','_blank');">Asterisk</a>
+                            <a class="btn bookmarks-button jsil local work" role=button onclick="window.open('https://sbc.jsil.uk/','_blank');">Audiocodes SBC</a>
+                            <a class="btn bookmarks-button design" role=button onclick="window.open('https://flawlessapp.io/designtools','_blank');">Awesome Design Tools</a>
+                            <a class="btn bookmarks-button development python" role=button onclick="window.open('https://awesome-python.com/','_blank');">Awesome Python</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://bigheads.io/','_blank');">Bigheads</a>
+                            <a class="btn bookmarks-button personal-development" role=button onclick="window.open('https://dev.to/rachel_cheuk/3-tips-for-developing-a-blogging-habit-3acc','_blank');">Blogging Tips</a>
+                            <a class="btn bookmarks-button ltds" role=button onclick="window.open('https://brain.fm/','_blank');">Brain.fm</a>
+                            <a class="btn bookmarks-button ltds wordpress" role=button onclick="window.open('https://www.brizy.io/','_blank');">Brizy Builder</a>
+                            <a class="btn bookmarks-button work" role=button onclick="window.open('https://www.businessdirect.bt.com/','_blank');">BT Business Direct</a>
+                            <a class="btn bookmarks-button work" role=button onclick="window.open('https://my.webjoin.com/','_blank');">BT Meet Me</a>
+                            <a class="btn bookmarks-button learning work" role=button onclick="window.open('https://btcontent.skillport.com/skillportfe','_blank');">BT Skill Soft</a>
+                            <a class="btn bookmarks-button work" role=button onclick="window.open('https://www.extranet.trading-command.com/','_blank');">BT Trade Zendesk</a>
+                            <a class="btn bookmarks-button work" role=button onclick="window.open('https://bt.webex.com/','_blank');">BT Webex</a>
+                            <a class="btn bookmarks-button web-dev" role=button onclick="window.open('https://bunnycdn.com/','_blank');">Bunny CDN</a>
+                            <a class="btn bookmarks-button cool development python web-dev" role=button onclick="window.open('https://carbon.now.sh/','_blank');">Carbon Code Images</a>
+                            <a class="btn bookmarks-button cool development python web-dev" role=button onclick="window.open('https://chmodcommand.com/','_blank');">chmod Calc</a>
+                            <a class="btn bookmarks-button colours design" role=button onclick="window.open('https://www.colorsandfonts.com/','_blank');">Colours & Fonts</a>
+                            <a class="btn bookmarks-button colours" role=button onclick="window.open('http://www.colorbox.io/','_blank');">Colour Box</a>
+                            <a class="btn bookmarks-button colours" role=button onclick="window.open('https://mycolor.space/','_blank');">ColorSpace</a>
+                            <a class="btn bookmarks-button colours" role=button onclick="window.open('http://www.colors.lol/','_blank');">Colours LOL</a>
+                            <a class="btn bookmarks-button colours" role=button onclick="window.open('https://coolors.co/','_blank');">Coolours</a>
+                            <a class="btn bookmarks-button backgrounds colours" role=button onclick="window.open('https://coolbackgrounds.io/','_blank');">Cool Backgrounds</a>
+                            <a class="btn bookmarks-button colours development" role=button onclick="window.open('http://crontab.guru/','_blank');">Crontab Guru</a>
+                            <a class="btn bookmarks-button design" role=button onclick="window.open('https://cssgr.id/','_blank');">CSSgr.id</a>
+                            <a class="btn bookmarks-button backgrounds colours design" role=button onclick="window.open('https://cssgradient.io/','_blank');">CSS Gradients</a>
+                            <a class="btn bookmarks-button design" role=button onclick="window.open('https://github.com/IBM/css-gridish','_blank');">CSS Gridish</a>
+                            <a class="btn bookmarks-button design" role=button onclick="window.open('https://codepen.io/anthonydugois/full/RpYBmy/','_blank');">CSS Grid Builder</a>
+                            <a class="btn bookmarks-button cool development web-dev" role=button onclick="window.open('https://www.danstools.com/','_blank');">Dan's Tools</a>
+                            <a class="btn bookmarks-button ltds plugins wordpress" role=button onclick="window.open('https://dashboardswitcher.com','_blank');">Dashboard Switcher</a>
+                            <a class="btn bookmarks-button ltds" role=button onclick="window.open('https://www.dealify.com/','_blank');">Dealify</a>
+                            <a class="btn bookmarks-button ltds" role=button onclick="window.open('https://dealmirror.com/','_blank');">Deal Mirror</a>
+                            <a class="btn bookmarks-button design" role=button onclick="window.open('https://www.designvalley.club/','_blank');">Design Valley</a>
+                            <a class="btn bookmarks-button development domains web-dev" role=button onclick="window.open('http://dnslookup.online/','_blank');">DNS Lookup</a>
+                            <a class="btn bookmarks-button elite" role=button onclick="window.open('https://eddb.io/','_blank');">Elite: Dangerous Database</a>
+                            <a class="btn bookmarks-button jsil local work" role=button onclick="window.open('https://esxi.jsil.uk/','_blank');">ESXi</a>
+                            <a class="btn bookmarks-button colours" role=button onclick="window.open('https://flatuicolors.com/','_blank');">Flat UI</a>
+                            <a class="btn bookmarks-button jsil local work" role=button onclick="window.open('https://freepbx.jsil.uk/','_blank');">FreePBX</a>
+                            <a class="btn bookmarks-button cool" role=button onclick="window.open('https://freeswitch.com/#getting-started','_blank');">FreeSwitch</a>
+                            <a class="btn bookmarks-button development python web-dev" role=button onclick="window.open('https://www.freecodecamp.com/','_blank');">Free Code Camp</a>
+                            <a class="btn bookmarks-button design development" role=button onclick="window.open('https://freemium.cc/index.html','_blank');">Freemium</a>
+                            <a class="btn bookmarks-button development python web-dev" role=button onclick="window.open('https://www.fullstackpython.com/','_blank');">Full Stack Python</a>
+                            <a class="btn bookmarks-button development web-dev" role=button onclick="window.open('https://web-development.space/tools/px-to-vw/','_blank');">Fluid Typography Calculator</a>
+                            <a class="btn bookmarks-button learning" role=button onclick="window.open('https://academy.gns3.com/sign_in','_blank');">GNS3 Academy</a>
+                            <a class="btn bookmarks-button learning" role=button onclick="window.open('https://gns3.mettl.com/applicant/login','_blank');">GNS3 Certification</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://courses.goselftaught.com/courses/enrolled','_blank');">Go self-taught</a>
+                            <a class="btn bookmarks-button design" role=button onclick="window.open('https://gridbyexample.com/','_blank');">Grid by example</a>
+                            <a class="btn bookmarks-button development domains web-dev" role=button onclick="window.open('https://toolbox.googleapps.com/apps/main/','_blank');">Gsuite Toolbox</a>
+                            <a class="btn bookmarks-button cool" role=button onclick="window.open('https://shop.hak5.org/','_blank');">Hax5</a>
+                            <a class="btn bookmarks-button ltds plugins wordpress" role=button onclick="window.open('https://happyfiles.io/account/','_blank');">Happy Files</a>
+                            <a class="btn bookmarks-button local" role=button onclick="window.open('https://instantink.hpconnected.com/uk/en/r/subscriptions/8135575528','_blank');">HP Instant Ink</a>
+                            <a class="btn bookmarks-button colours" role=button onclick="window.open('https://www.hexcolortool.com/','_blank');">HTML Colour Codes</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://icons8.com/','_blank');">Icons 8</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://app.itg.digital/','_blank');">ITG.digital</a>
+                            <a class="btn bookmarks-button images" role=button onclick="window.open('https://www.imgbot.ai/','_blank');">Image Bot</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://interfacer.xyz/','_blank');">Interfacer</a>
+                            <a class="btn bookmarks-button learning personal-development" role=button onclick="window.open('https://app.itpro.tv/login/','_blank');">ITPro TV</a>
+                            <a class="btn bookmarks-button development learning web-dev" role=button onclick="window.open('https://javascript30.com/account','_blank');">Javascript 30</a>
+                            <a class="btn bookmarks-button cool" role=button onclick="window.open('https://uk.labgopher.com/servers/Dell_R210ii/#0-1000x0.000-100.0x0-512x0-4x0-30000xtrue-true','_blank');">Labgopher UK</a>
+                            <a class="btn bookmarks-button design" role=button onclick="window.open('https://grid.layoutit.com/','_blank');">Layout It</a>
+                            <a class="btn bookmarks-button ltds" role=button onclick="window.open('https://www.lifetimedeal.com/deals','_blank');">Lifetime Deal</a>
+                            <a class="btn bookmarks-button jsil" role=button onclick="window.open('https://www.littlegreene.com/','_blank');">Little Green Paint</a>
+                            <a class="btn bookmarks-button cool images" role=button onclick="window.open('https://lostandtaken.com/','_blank');">Lost + Taken</a>
+                            <a class="btn bookmarks-button ltds" role=button onclick="window.open('https://ltdhunt.com/','_blank');">LTD Hunt</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://mattharrison.podia.com/dashboard','_blank');">Matt Harrison</a>
+                            <a class="btn bookmarks-button web-dev" role=button onclick="window.open('https://app.metomic.io/login','_blank');">Metomic</a>
+                            <a class="btn bookmarks-button ltds" role=button onclick="window.open('https://www.mightydeals.com/','_blank');">Mighty Deals</a>
+                            <a class="btn bookmarks-button development python web-dev" role=button onclick="window.open('https://mockaroo.com/','_blank');">Mockaroo</a>
+                            <a class="btn bookmarks-button images ltds plugins wordpress" role=button onclick="window.open('https://wp-modula.com/','_blank');">Modula Galleries</a>
+                            <a class="btn bookmarks-button cool" role=button onclick="window.open('https://www.monoprice.uk/','_blank');">Monoprice UK</a>
+                            <a class="btn bookmarks-button development work" role=button onclick="window.open('https://my.visualstudio.com/','_blank');">MSDN</a>
+                            <a class="btn bookmarks-button domains web-dev" role=button onclick="window.open('https://banshee.mxlogin.com:2083/','_blank');">MX Route</a>
+                            <a class="btn bookmarks-button domains web-dev" role=button onclick="window.open('https://mail.mxlogin.com','_blank');">MX Webmail</a>
+                            <a class="btn bookmarks-button development domains web-dev" role=button onclick="window.open('https://mxtoolbox.com/SuperTool.aspx','_blank');">MX Toolbox</a>
+                            <a class="btn bookmarks-button personal-development" role=button onclick="window.open('https://www.networkerstechnology.com/search-page?title=&excluding=&location=&field_job_type=Permanent&field_salary_from%5B%5D=50000-75000&field_salary_from%5B%5D=75000-100000','_blank');">Networkers Technology</a>
+                            <a class="btn bookmarks-button misc" role=button onclick="window.open('http://www.operationcrackdown.org/','_blank');">Operation Crackdown</a>
+                            <a class="btn bookmarks-button learning wordpress" role=button onclick="window.open('https://oxygen4fun.supadezign.com/','_blank');">Oxygen4Fun</a>
+                            <a class="btn bookmarks-button ltds plugins wordpress" role=button onclick="window.open('https://oxypowerpack.com/','_blank');">OxygenPowerPack</a>
+                            <a class="btn bookmarks-button ltds plugins wordpress" role=button onclick="window.open('https://www.erropix.com/products/oxygen-attributes/','_blank');">Oxygen Attributes</a>
+                            <a class="btn bookmarks-button ltds plugins wordpress" role=button onclick="window.open('https://oxygenbuilder.com/login','_blank');">Oxygen Builder</a>
+                            <a class="btn bookmarks-button ltds plugins wordpress" role=button onclick="window.open('https://editorenhancer.com','_blank');">Oxygen Editor Enhancer</a>
+                            <a class="btn bookmarks-button wordpress" role=button onclick="window.open('https://oxystuff.com/','_blank');">Oxystuff</a>
+                            <a class="btn bookmarks-button development learning" role=button onclick="window.open('https://www.packtpub.com/gb/','_blank');">Packt</a>
+                            <a class="btn bookmarks-button colours" role=button onclick="window.open('https://paletton.com','_blank');">Palleton</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://www.pexels.com/','_blank');">Pexels</a>
+                            <a class="btn bookmarks-button development web-dev" role=button onclick="window.open('https://www.phpjabbers.com/','_blank');">PHP Jabbers</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://pixabay.com/','_blank');">Pixabay</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://pixelmodo.com/login','_blank');">Pixelmodo</a>
+                            <a class="btn bookmarks-button social-media" role=button onclick="window.open('https://planagram.co/','_blank');">Planagram</a>
+                            <a class="btn bookmarks-button design web-dev" role=button onclick="window.open('https://placeholder.com/','_blank');">Placeholder</a>
+                            <a class="btn bookmarks-button cool misc" role=button onclick="window.open('https://naramsim.github.io/Colosseum/#','_blank');">Pokemon Pokedex</a>
+                            <a class="btn bookmarks-button ltds web-dev" role=button onclick="window.open('https://www.poplink.io/dashboard','_blank');">Poplink</a>
+                            <a class="btn bookmarks-button ltds web-dev" role=button onclick="window.open('https://publit.io/dashboard','_blank');">Publitio</a>
+                            <a class="btn bookmarks-button ltds plugins web-dev" role=button onclick="window.open('https://gumroad.com/library','_blank');">Pushfolio</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://codechalleng.es/','_blank');">PyBites</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://exercism.io/','_blank');">PyExercises - Exercism</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://www.practicepython.org/','_blank');">PyExercises - Practice Python</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://pythonvoyage.com/','_blank');">Python Voyage</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://csdojo.io/','_blank');&quot;">Python CS Dojo</a>
+                            <a class="btn bookmarks-button development python" role=button onclick="window.open('https://blog.jetbrains.com/pycharm/','_blank');">PyCharm Blog</a>
+                            <a class="btn bookmarks-button development python" role=button onclick="window.open('https://pypi.org/','_blank');">PyPI</a>
+                            <a class="btn bookmarks-button cool misc" role=button onclick="window.open('https://www.qrcode-monkey.com/','_blank');">QR Code Monkey</a>
+                            <a class="btn bookmarks-button ltds plugins wordpress" role=button onclick="window.open('https://quadmenu.com/','_blank');">QuadMenu</a>
+                            <a class="btn bookmarks-button cool misc" role=button onclick="window.open('https://rackstuds.com/','_blank');">Rack Studs</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://realpython.com/account/purchases/','_blank');">Real Python</a>
+                            <a class="btn bookmarks-button saas video" role=button onclick="window.open('https://app.reevio.com/','_blank');">Reevio</a>
+                            <a class="btn bookmarks-button development learning" role=button onclick="window.open('https://regexone.com/','_blank');">Regex One</a>
+                            <a class="btn bookmarks-button development python" role=button onclick="window.open('https://www.regexpal.com/','_blank');">RegexPal</a>
+                            <a class="btn bookmarks-button development" role=button onclick="window.open('https://regex101.com/','_blank');">Regex101</a>
+                            <a class="btn bookmarks-button development web-dev" role=button onclick="window.open('https://app.releasly.co/login','_blank');">Releasly</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://www.reshot.com/','_blank');">Reshot</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://store.lerner.co.il/dashboard','_blank');">Reuven Lerner's Python Courses</a>
+                            <a class="btn bookmarks-button personal-development" role=button onclick="window.open('https://rezi.nolt.io/','_blank');">Rezi Feedback</a>
+                            <a class="btn bookmarks-button ltds personal-development" role=button onclick="window.open('https://app.rezi.io/dashboard','_blank');">Rezi Resumes</a>
+                            <a class="btn bookmarks-button elite" role=button onclick="window.open('https://roguey.co.uk/elite-dangerous/','_blank');">Roguey</a>
+                            <a class="btn bookmarks-button misc" role=button onclick="window.open('https://www.amazon.co.uk/stores/page/817D852F-4D80-498E-91EC-B97D98AE1D08?store_ref=SB_A0690910F7YM86MYJRDV&pf_rd_p=b897769b-75e0-4ca1-98de-a5c4c5a58534&aaxitk=baVeIJ-n0dSyWvpRYT8K8g&hsa_cr_id=5637362710402&lp_asins=B01NB0C831,B00ITLK79G,B0117BTDT4&lp_mat_key=ryobi&lp_query=ryobi&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_td_brand','_blank');">Ryobi Tools - Amazon</a>
+                            <a class="btn bookmarks-button work" role=button onclick="window.open('https://office.bt.com/sites/STS-Groupshare/SitePages/Home.aspx','_blank');">Schedule - BT</a>
+                            <a class="btn bookmarks-button web-dev" role=button onclick="window.open('https://serpstat.com/','_blank');">SERPstat SEO</a>
+                            <a class="btn bookmarks-button jsil local" role=button onclick="window.open('https://ilo.jsil.uk/','_blank');">Server IPMI</a>
+                            <a class="btn bookmarks-button design web-dev" role=button onclick="window.open('https://brumm.af/shadows','_blank');">Smooth Shadows</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://shape.so/','_blank');">Shape.so</a>
+                            <a class="btn bookmarks-button learning personal-development" role=button onclick="window.open('https://live.shawacademy.com/login','_blank');">Shaw Academy</a>
+                            <a class="btn bookmarks-button images ltds plugins web-dev" role=button onclick="window.open('https://shortpixel.com/','_blank');">ShortPixel</a>
+                            <a class="btn bookmarks-button cool misc" role=button onclick="window.open('https://app.simplenote.com/login/','_blank');">Simplenote</a>
+                            <a class="btn bookmarks-button domains web-dev" role=button onclick="window.open('https://www.stackcp.com/login','_blank');">StackCP</a>
+                            <a class="btn bookmarks-button learning personal-development" role=button onclick="window.open('https://stackskills.com/sign_in','_blank');">StackSkills</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://stocksnap.io/','_blank');">Stock Snap</a>
+                            <a class="btn bookmarks-button colours design" role=button onclick="window.open('https://subcolor.github.io/','_blank');">Subcolour</a>
+                            <a class="btn bookmarks-button backgrounds design images" role=button onclick="window.open('https://www.svgbackgrounds.com/','_blank');">SVG - Backgrounds</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://www.blobmaker.app/','_blank');">SVG - Blobmaker</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://getwaves.io/','_blank');">SVG - Getwaves</a>
+                            <a class="btn bookmarks-button local online-storage" role=button onclick="window.open('https://synology.zt:5001','_blank');">Synology</a>
+                            <a class="btn bookmarks-button development learning personal-development python" role=button onclick="window.open('https://training.talkpython.fm/account/','_blank');">TalkPython Training</a>
+                            <a class="btn bookmarks-button cool misc work" role=button onclick="window.open('https://danielmiessler.com/study/tcpdump/','_blank');">TCPdump Tutorial</a>
+                            <a class="btn bookmarks-button domains" role=button onclick="window.open('https://controlpanel.tech/','_blank');">.tech Domain Admin</a>
+                            <a class="btn bookmarks-button personal-development" role=button onclick="window.open('https://www.techcore-rs.com/current-vacancies','_blank');">Techcore RS</a>
+                            <a class="btn bookmarks-button plugins wordpress" role=button onclick="window.open('https://theplugineconomy.com/','_blank');">The Plugin Economy</a>
+                            <a class="btn bookmarks-button online-storage" role=button onclick="window.open('https://app.thunderdrive.io/drive','_blank');">ThunderDrive</a>
+                            <a class="btn bookmarks-button cool development" role=button onclick="window.open('https://containo.us/traefik/','_blank');">Traefik Edge Router</a>
+                            <a class="btn bookmarks-button development learning personal-development" role=button onclick="window.open('https://www.udemy.com/','_blank');">Udemy</a>
+                            <a class="btn bookmarks-button domains" role=button onclick="window.open('https://tld-list.com/launch-schedule','_blank');">Upcoming TLDs</a>
+                            <a class="btn bookmarks-button design" role=button onclick="window.open('https://undesign.learn.uno/','_blank');">Undesign</a>
+                            <a class="btn bookmarks-button 10kindstech" role=button onclick="window.open('https://unifi.10kinds.tech/','_blank');">Unifi Controller</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://unsplash.com/','_blank');">Unsplash</a>
+                            <a class="btn bookmarks-button design images" role=button onclick="window.open('https://undraw.co/','_blank');">Undraw</a>
+                            <a class="btn bookmarks-button ltds plugins web-dev" role=button onclick="window.open('https://www.userback.io/','_blank');">Userback</a>
+                            <a class="btn bookmarks-button backgrounds images" role=button onclick="window.open('https://lstore.graphics/paaatterns/index.html','_blank');">Vector Patterns</a>
+                            <a class="btn bookmarks-button ltds saas video" role=button onclick="window.open('https://videorobotapp.com/','_blank');">Video Robot</a>
+                            <a class="btn bookmarks-button cool misc" role=button onclick="window.open('https://www.voile.com/voile-straps.html','_blank');">Voile Straps</a>
+                            <a class="btn bookmarks-button cool misc" role=button onclick="window.open('https://www.amazon.co.uk/stores/Wera/page/C3B112B0-FBDF-43E6-891C-156F2995AC0A?ref_=ast_bln','_blank');">Wera Tools - Amazon</a>
+                            <a class="btn bookmarks-button learning ltds web-dev wordpress" role=button onclick="window.open('https://wpdevdesign.com/','_blank');">WPDevDesign</a>
+                            <a class="btn bookmarks-button development web-dev wordpress" role=button onclick="window.open('https://wppb.me/','_blank');">WP Plugin Boilerplate</a>
+                            <a class="btn bookmarks-button web-dev wordpress" role=button onclick="window.open('https://poedit.net/','_blank');">WP Translations</a>
+                            <a class="btn bookmarks-button cool misc" role=button onclick="window.open('https://my.zerotier.com/login','_blank');">ZeroTier</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=my-2>
+            <div class=container>
+                <div class=row>
+                    <div class=col>
+                        <h2 class=section-heading>My websites:</h2>
+                        <a class="btn websites-button" role=button target=_blank href="https://www.10kinds.tech">10 Kinds Technology</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://www.ajholloway.co.uk">A J Holloway</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://www.arunfasteners.co.uk">Arun Fasteners</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://barkworth-hathaway.com">Barkworth Hathaway</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://bandtbuildingservices.co.uk">B & T Building Services</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://dselectrical.org">D S Electrical</a>
+                        <a class="btn disabled websites-button" role=button target=_blank href="https://www.industrybikeworks.com">Industry Bike Works</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://jrobinson.net">J Robinson</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://photos.jsil.uk">JSIL Photos</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://moralee.farm">Moralee Farm</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://www.sraccounts.com">SR Accounts</a>
+                        <a class="btn websites-button" role=button target=_blank href="https://docs.stsnet.net">STSnet Docs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div metal:fill-slot="additional-js" tal:omit-tag="">
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script>
+            var $container = jQuery('.isotope-content');
+
+            var $buttons = jQuery($container).isotope({
+                // options
+                itemSelector: '.bookmarks-button',
+                layoutMode: 'fitRows',
+
+            });
+
+
+            // Filter content based on first category
+            jQuery('.filter-list button').on('click', function () {
+                if (jQuery(this).hasClass('isotope_active_filter')) {
+                    jQuery(this).removeClass('isotope_active_filter');
+                    $container.isotope({
+                        filter: '*',
+                        getSortData: {name: '.bookmarks-button'},
+                        sortBy: 'name'
+                    })
+
+                } else {
+                    jQuery('.filter-list button').removeClass('isotope_active_filter');
+                    var filterValue = jQuery(this).attr('data-filter');
+                    $container.isotope({
+                        filter: filterValue,
+                        getSortData: {name: '.bookmarks-button'},
+                        sortBy: 'name'
+                    });
+                    jQuery(this).addClass('isotope_active_filter');
+                }
+            });
+        </script>
+    </div>
+</div>

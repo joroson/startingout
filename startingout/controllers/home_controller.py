@@ -19,3 +19,8 @@ def home_index(_):
 @view_config(route_name='about', renderer='startingout:templates/home/about.pt')
 def home_about(_):
     return {}
+
+@view_config(route_name='bookmarks', renderer='startingout:templates/home/bookmarks.pt')
+def home_bookmarks(_):
+    return {}
+

@@ -21,6 +21,7 @@ def init_routing(config):
     # home controller
     config.add_route('home', '/')
     config.add_route('about', '/about')
+    config.add_route('bookmarks', '/bookmarks')
 
     # mini-scripts controller
     config.add_route('mini-scripts', '/mini-scripts')
