@@ -5,11 +5,11 @@
 }
 
 .navbar .nav-item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 25px;
 }
 
 .dropdown-toggle::after {
-   transition: transform 0.15s linear;
+   transition: transform 0.15s ease-in-out;
 }
 
 .show.dropdown .dropdown-toggle::after {
