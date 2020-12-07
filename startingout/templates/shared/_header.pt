@@ -1,0 +1,23 @@
+<div metal:define-macro="header" tal:omit-tag="">
+        <header>
+            <nav class="navbar navbar-light navbar-expand-md bg-secondary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Joe Robinson</a>
+                    <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/mini-scripts">Mini-scripts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/account">Account</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/account/login">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/account/register">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+</div>

@@ -75,14 +75,14 @@
                         <div class="col">
                             <h2 tal:condition="input_pou">${input_pou} pounds is equal to</h2>
                             <h2 tal:condition="input_sto and input_slb and input_ozs">${input_sto} stone, ${input_slb} pounds and ${input_ozs} ounces is equal to</h2>
-                            <h2 tal:condition="input_kgs">${input_kgs} is equal to</h2>
+                            <h2 tal:condition="input_kgs">${input_kgs} kilograms is equal to</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <h3 tal:condition="output_lbs">${output_lbs} pounds.</h3>
                             <h3 tal:condition="output_kgs">${output_kgs} kilograms.</h3>
-                            <h3 tal:condition="output_sto and output_slb and output_ozs">${output_sto} stone, ${output_slb} pounds and ${output_ozs} ounces.</h3>
+                            <h3 tal:condition="output_sto or output_slb or output_ozs">${output_sto} stone, ${output_slb} pounds and ${output_ozs} ounces.</h3>
                         </div>
                     </div>
                 </div>

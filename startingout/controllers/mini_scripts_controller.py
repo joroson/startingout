@@ -50,10 +50,12 @@ def weight_conversion_post(request: Request):
         con_lbs_st = lbs_int // 14
         con_lbs_lb = lbs_int % 14
         con_lbs_oz = (lbs_float % 14) - con_lbs_lb
-        con_lbs_oz = int(round(con_lbs_oz, 2) // 0.0625)
+        con_lbs_oz = int(round(con_lbs_oz // 0.0625, 2))
         con_lbs_kg = round(lbs_float * 0.45359, 1)
 
         info()
+
+        print(f"output_sto = {con_lbs_st}\noutput_slb = {con_lbs_lb}\noutput_ozs = {con_lbs_oz}\noutput_kgs = {con_lbs_kg}\ninput_pou = {lbs_float}")
 
         return {
             'output_lbs': None,
@@ -98,7 +100,7 @@ def weight_conversion_post(request: Request):
         con_kgs_st = con_kgs_pd_int // 14
         con_kgs_lb = int(con_kgs_pd % 14)
         con_kgs_oz = con_kgs_pd - con_kgs_pd_int
-        con_kgs_oz = int(round(con_kgs_oz, 2) // 0.0625)
+        con_kgs_oz = int(round(con_kgs_oz // 0.0625, 2))
 
         info()
 
@@ -118,3 +120,4 @@ def weight_conversion_post(request: Request):
     else:
         info()
         return {}
+

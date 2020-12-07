@@ -1,0 +1,14 @@
+<div metal:define-macro="footer" tal:omit-tag="">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center">I am a footer column that is rendered from the template</h1>
+                    </div>
+                    <div class="col">
+                        <h1 class="text-center">I am footer column 2</h1>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</div>
