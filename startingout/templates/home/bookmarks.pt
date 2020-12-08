@@ -60,8 +60,6 @@
                             <a class="btn bookmarks-button personal-development" role=button onclick="window.open('https://dev.to/rachel_cheuk/3-tips-for-developing-a-blogging-habit-3acc','_blank');">Blogging Tips</a>
                             <a class="btn bookmarks-button ltds" role=button onclick="window.open('https://brain.fm/','_blank');">Brain.fm</a>
                             <a class="btn bookmarks-button ltds wordpress" role=button onclick="window.open('https://www.brizy.io/','_blank');">Brizy Builder</a>
-                            <a class="btn bookmarks-button work" role=button onclick="window.open('https://www.businessdirect.bt.com/','_blank');">BT Business Direct</a>
-                            <a class="btn bookmarks-button work" role=button onclick="window.open('https://my.webjoin.com/','_blank');">BT Meet Me</a>
                             <a class="btn bookmarks-button learning work" role=button onclick="window.open('https://btcontent.skillport.com/skillportfe','_blank');">BT Skill Soft</a>
                             <a class="btn bookmarks-button work" role=button onclick="window.open('https://www.extranet.trading-command.com/','_blank');">BT Trade Zendesk</a>
                             <a class="btn bookmarks-button work" role=button onclick="window.open('https://bt.webex.com/','_blank');">BT Webex</a>
@@ -167,7 +165,6 @@
                             <a class="btn bookmarks-button ltds personal-development" role=button onclick="window.open('https://app.rezi.io/dashboard','_blank');">Rezi Resumes</a>
                             <a class="btn bookmarks-button elite" role=button onclick="window.open('https://roguey.co.uk/elite-dangerous/','_blank');">Roguey</a>
                             <a class="btn bookmarks-button misc" role=button onclick="window.open('https://www.amazon.co.uk/stores/page/817D852F-4D80-498E-91EC-B97D98AE1D08?store_ref=SB_A0690910F7YM86MYJRDV&pf_rd_p=b897769b-75e0-4ca1-98de-a5c4c5a58534&aaxitk=baVeIJ-n0dSyWvpRYT8K8g&hsa_cr_id=5637362710402&lp_asins=B01NB0C831,B00ITLK79G,B0117BTDT4&lp_mat_key=ryobi&lp_query=ryobi&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_td_brand','_blank');">Ryobi Tools - Amazon</a>
-                            <a class="btn bookmarks-button work" role=button onclick="window.open('https://office.bt.com/sites/STS-Groupshare/SitePages/Home.aspx','_blank');">Schedule - BT</a>
                             <a class="btn bookmarks-button web-dev" role=button onclick="window.open('https://serpstat.com/','_blank');">SERPstat SEO</a>
                             <a class="btn bookmarks-button jsil local" role=button onclick="window.open('https://ilo.jsil.uk/','_blank');">Server IPMI</a>
                             <a class="btn bookmarks-button design web-dev" role=button onclick="window.open('https://brumm.af/shadows','_blank');">Smooth Shadows</a>
