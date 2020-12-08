@@ -3,8 +3,8 @@ Description=uWSGI WebApp server instance
 After=syslog.target
 
 [Service]
-ExecStart=/apps/venv/bin/uwsgi -H /apps/venv --ini-paste /apps/app_repo/<some_path>/production.ini
-RuntimeDirectory=/apps/app_repo/<some_path
+ExecStart=/apps/joe.rbnsn.uk/venv/bin/uwsgi -H /apps/joe.rbnsn.uk/venv --ini-paste /apps/joe.rbnsn.uk/startingout/production.ini
+RuntimeDirectory=/apps/joe.rbnsn.uk/startingout/
 Restart=always
 KillSignal=SIGQUIT
 Type=notify
