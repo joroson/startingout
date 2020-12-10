@@ -4,6 +4,10 @@
   font-size: clamp(16px,1.964vw, 22px);
 }
 
+body {
+  min-height: 100vh;
+}
+
 .navbar .nav-item:not(:last-child) {
   margin-right: 25px;
 }
