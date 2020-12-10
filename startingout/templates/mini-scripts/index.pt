@@ -6,7 +6,7 @@
 
 <div metal:fill-slot="content" tal:omit-tag="">
 
-    <div id="scripts-hero" class="container-fluid d-xl-flex flex-column justify-content-xl-center align-items-xl-center min-vh-100">
+    <div id="scripts-hero" class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <!--<img class="img-fluid" src="${request.static_url('startingout:static/joe.rbnsn.uk_logo.svg')}"/>-->
         <h1 class="display-3">Mini-scripts</h1>
         <p class="lead px-5">What are mini-scripts? These are the small programs that I have written or find useful that

@@ -6,7 +6,7 @@
 
     <div metal:fill-slot="content" tal:omit-tag="">
 
-        <div id="home-hero" class="container-fluid d-xl-flex flex-column justify-content-xl-center align-items-xl-center min-vh-100">
+        <div id="home-hero" class="container-fluid d-flex flex-column justify-content-center align-items-center">
             <h1 class="text-white">This is the home page</h1>
             <a class="btn btn-primary" role="button" href="/mini-scripts">Mini-scripts</a>
         </div>
