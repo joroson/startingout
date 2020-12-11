@@ -5,7 +5,7 @@
 <div metal:fill-slot="additional-css" tal:omit-tag=""></div>
 
     <div metal:fill-slot="content" tal:omit-tag="">
-        <div id="weight-converter" class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <div id="weight-converter" class="container-fluid d-flex flex-column justify-content-center align-items-center vanta-container">
             <main>
                 <div class="container my-5">
                     <div class="row">

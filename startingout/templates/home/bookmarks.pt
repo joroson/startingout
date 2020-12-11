@@ -4,7 +4,7 @@
 
 <div metal:fill-slot="additional-css" tal:omit-tag=""><link rel="stylesheet" href="${request.static_url('startingout:static/css/home/bookmarks.css')}"></div>
 
-    <main metal:fill-slot="content">
+    <main metal:fill-slot="content" class="min-vh-100">
         <section class="link-container my-2">
             <div class=container>
                 <div class=row>

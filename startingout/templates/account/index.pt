@@ -7,7 +7,7 @@
     <div metal:fill-slot="content" tal:omit-tag="">
 
         <div id="account-home"
-             class="container-fluid d-xl-flex flex-column justify-content-xl-center align-items-xl-center min-vh-100">
+             class="container-fluid d-flex flex-column justify-content-center align-items-center vanta-container">
             <h1 class="text-white">This is the <span class="display-1">account home</span> page</h1>
             <div class="d-flex">
                 <a class="btn btn-primary mx-2" role="button" href="/account/register">Register</a>

@@ -5,6 +5,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -26,6 +28,20 @@ body {
 
 header {
   //background-image: linear-gradient(to left, #314755 -10%, #26a0da 110%);
+  //position: sticky;
+  //top: 0;
+  //z-index: 100;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vanta-container {
+  flex: 1;
 }
 
 footer {

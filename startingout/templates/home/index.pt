@@ -6,7 +6,7 @@
 
     <div metal:fill-slot="content" tal:omit-tag="">
 
-        <div id="home-hero" class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <div id="home-hero" class="container-fluid d-flex flex-column justify-content-center align-items-center vanta-container">
             <h1 class="text-white">Joe Robinson</h1>
             <a class="btn btn-primary" role="button" href="/mini-scripts">Mini-scripts</a>
         </div>
