@@ -39,13 +39,13 @@
                 </div>
             </nav> -->
 <nav class="navbar navbar-light navbar-expand-sm">
-        <div class="container-fluid"><a class="navbar-brand" href="#"><img src="${request.static_url('startingout:static/img/joe.rbnsn.uk_logo.svg')}" height="35"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="/"><img src="${request.static_url('startingout:static/img/joe.rbnsn.uk_logo.svg')}" height="35"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/bookmarks">Bookmarks</a></li>
                     <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Mini-scripts</a>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="/mini-scripts">Mini-scripts</a>
                         <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="/mini-scripts/weight-conversion">Weight Conversion</a>
                             <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Not done</a><a class="dropdown-item" href="#">Super not done</a>
                         </div>

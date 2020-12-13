@@ -13,4 +13,3 @@ class MiniScriptsViewModel(ViewModelBase):
         self.output_slb = self.request_dict.get('output_slb')
         self.output_ozs = self.request_dict.get('output_ozs')
         self.output_kgs = self.request_dict.get('output_kgs')
-

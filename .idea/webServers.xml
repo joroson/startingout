@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="4fe06d8f-9eef-48dc-8b11-706d9e6adf54" name="vps1.10kinds.tech" url="https://vps1.10kinds.tech/">
+        <fileTransfer rootFolder="/home/joroson/pycharm" accessType="SFTP" host="vps1.10kinds.tech" port="22" sshConfigId="bb8f8da7-daaa-49c3-99cb-87ce532ce52c" sshConfig="joroson@vps1.10kinds.tech:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

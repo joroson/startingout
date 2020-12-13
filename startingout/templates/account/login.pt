@@ -7,6 +7,13 @@
     <div metal:fill-slot="content" tal:omit-tag="">
 
         <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <div role="alert" class="alert alert-info text-white">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <h4 class="alert-heading text-dark">Not implemented</h4>
+                <p class="text-dark">Accounts are not implemented. The code is not in place at the moment and these
+                    pages are just placeholders for the time being.</p>
+            </div>
             <h1>This is the <span class="display-1">login</span> page</h1>
             <a class="btn btn-primary" role="button" href="/account">Account home</a>
         </div>

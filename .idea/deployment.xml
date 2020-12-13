@@ -9,10 +9,10 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="UbuntuVM">
+      <paths name="vps1.10kinds.tech">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/startingout" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

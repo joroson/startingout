@@ -7,8 +7,19 @@
     <div metal:fill-slot="content" tal:omit-tag="">
 
         <div id="home-hero" class="container-fluid d-flex flex-column justify-content-center align-items-center vanta-container">
-            <h1 class="text-white">Joe Robinson</h1>
-            <a class="btn btn-primary" role="button" href="/mini-scripts">Mini-scripts</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="text-white lead">Joe Robinson</h1>
+                        <p class="lead text-white text-justify">
+                            Please don't judge this too harshly, I am working on it constantly and
+                            I would consider this an alpha version that I have put together to get
+                            started with a Python powered website/webapp running on the Pyramid framework.
+                        </p>
+                        <a class="btn btn-primary" role="button" href="/mini-scripts">Mini-scripts</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

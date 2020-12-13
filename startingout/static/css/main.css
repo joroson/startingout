@@ -26,12 +26,20 @@ body {
   margin-top: 0;
 }
 
+/*************************************************************/
+/********      shared/_header.pt Template Styles      ********/
+/*************************************************************/
+
 header {
   //background-image: linear-gradient(to left, #314755 -10%, #26a0da 110%);
   //position: sticky;
   //top: 0;
   //z-index: 100;
 }
+
+/*************************************************************/
+/********       shared/_main.pt Template Styles       ********/
+/*************************************************************/
 
 main {
   display: flex;
@@ -41,32 +49,41 @@ main {
 }
 
 .vanta-container {
-  flex: 1;
+  min-height: 100vh;
 }
 
+/*************************************************************/
+/********      shared/_footer.pt Template Styles      ********/
+/*************************************************************/
+
 footer {
-  background-image: linear-gradient(to right, #314755 -10%, #26a0da 110%);
-  padding: 50px 10px;
+  //background-image: linear-gradient(to right, #314755 -10%, #26a0da 110%);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px 10px;
+  padding: 10px;
 }
 
 .footer-links {
-  color: #ffffff;
-  font-size: 1rem;
+  color: #2c3e50;
+  font-size: 0.9rem;
   text-decoration: none;
 }
 
 .footer-links:hover {
-  color: #cccccc;
   text-decoration: none;
 }
 
 .sub-footer-links {
-  color: #ffffff;
+  color: #2c3e50;
   font-size: 0.8rem;
+  margin-left: 5px;
 }
 
 .sub-footer-links:hover {
-  color: #cccccc;
   text-decoration: none;
 }
 

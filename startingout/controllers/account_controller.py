@@ -47,3 +47,4 @@ def register_post(request):
 @view_config(route_name='logout')
 def logout(request):
     return {}
+

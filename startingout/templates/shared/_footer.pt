@@ -1,16 +1,19 @@
 <div metal:define-macro="footer" tal:omit-tag="">
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex flex-column">
-                    <a class="footer-links" href="/">Home</a>
-                    <a class="footer-links" href="/bookmarks">Bookmarks</a>
-                    <a class="footer-links" href="/about">About</a>
-                    <a class="footer-links" href="/mini-scripts">Mini-scripts</a>
-                    <a class="sub-footer-links" href="/mini-scripts/weight-conversion">Weight Conversion</a>
-                </div>
-                <div class="col"></div>
-            </div>
+    <footer class="footer-grid">
+        <div style="display: flex; flex-direction: column;">
+            <a class="footer-links" href="#">Home</a>
+            <a class="footer-links" href="#">Bookmarks</a>
+            <a class="footer-links" href="#">About</a>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <a class="footer-links" href="/mini-scripts">Mini-scripts</a>
+            <a class="sub-footer-links" href="/mini-scripts/weight-conversion">Weight Conversion</a>
+            <a class="footer-links" href="/account">Account</a>
+            <a class="sub-footer-links" href="/account/login">Login</a>
+            <a class="sub-footer-links" href="/account/register">Register</a>
+        </div>
+        <div class="d-flex flex-grow-1 justify-content-end">
+            <img src="https://bigheads.io/svg?accessory=none&amp;body=chest&amp;circleColor=blue&amp;clothing=shirt&amp;clothingColor=red&amp;eyebrows=raised&amp;eyes=normal&amp;faceMask=false&amp;faceMaskColor=white&amp;facialHair=none&amp;graphic=none&amp;hair=short&amp;hairColor=brown&amp;hat=none&amp;hatColor=white&amp;lashes=false&amp;lipColor=red&amp;mask=true&amp;mouth=openSmile&amp;skinTone=light" loading="lazy"/>
         </div>
     </footer>
 </div>
