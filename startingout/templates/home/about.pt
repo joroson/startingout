@@ -21,9 +21,30 @@
             <div class=container>
                 <div class=row>
                     <div class="col rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
-                        <p class=text-justify>I am a father and husband living in Bognor Regis which is located on the south coast of England.</p>
-                        <p class=text-justify>I work for British Telecom as a product specialist for SIP-based trader voice solutions and I am interested in a wide range of topics relating to IT in general. I started out as an apprentice working in a general admin job at BT and once I completed my apprenticeship I felt like I needed to do more. On the recommendation of a family member who had recently retired from GCHQ I began studying for my CCNA. After about of year of study (I had never done anything involving data networks before) and two failed attempts, I finally passed my CCNA. I immediately started applying for jobs with my new CCNA only to have the same issue that many people have, I didn't have the experience required to get a job that actually used my qualification. After a year of applying for jobs inside BT (I know, I should have looked elsewhere too) I finally got an interview and a job with BT Trading Systems from a fantastic manager who was willing to take a chance on someone who was willing to learn. Working at BT Trading systems completely opened the door to a side of the IT industry that I never even considered had existed.</p>
-                        <p class=text-justify>Since then I have become far more interested in all aspects of computing. I started out with just networking but quickly got into virtualisation (initially with VMware) and Linux systems as we were using them at work. and from there I became intrigued by web design, development and hosting. From that I got into programming and created an online schedule for my team at work, this was written in PHP with a MySQL backend, a few bits of Javascript/jQuery and Bootstrap on the front. In all honesty I had looked into learning Python before this but I didn't get too far with it. It is now the Python renaissance as it were and I am trying to learn as much as I can about it at the moment.</p>
+                        <p class=text-justify>
+                            I am a father and husband living in Bognor Regis which is located on the south coast of England.
+                        </p>
+                        <p class=text-justify>
+                            I work for British Telecom as a product specialist for SIP-based trader voice solutions and I am interested
+                            in a wide range of topics relating to IT in general. I started out as an apprentice working in a general
+                            admin job at BT and once I completed my apprenticeship I felt like I needed to do more. On the recommendation
+                            of a family member who had recently retired from GCHQ I began studying for my CCNA. After about of year of
+                            study (I had never done anything involving data networks before) and two failed attempts, I finally passed
+                            my CCNA. I immediately started applying for jobs with my new CCNA only to have the same issue that many
+                            people have, I didn't have the experience required to get a job that actually used my qualification. After
+                            a year of applying for jobs inside BT (I know, I should have looked elsewhere too) I finally got an
+                            interview and a job with BT Trading Systems from a fantastic manager who was willing to take a chance on
+                            someone who was willing to learn. Working at BT Trading systems completely opened the door to a side of the
+                            IT industry that I never even considered had existed.
+                        </p>
+                        <p class=text-justify>
+                            Since then I have become far more interested in all aspects of computing. I started out  with just networking
+                            but quickly got into virtualisation (initially with VMware) and Linux systems as we were using them at work.
+                            From there I became intrigued by web design, development and hosting. From that I got into programming and
+                            created an online schedule for my team at work, this was written in PHP with a MySQL backend, a few bits of
+                            Javascript/jQuery and Bootstrap on the front. In all honesty I had looked into learning Python before this
+                            but I didn't get too far with it. For the past while I have been focusing more on Python, in fact, this website
+                            is "written in" Python and uses the Pyramid framework.</p>
                     </div>
                 </div>
             </div>
