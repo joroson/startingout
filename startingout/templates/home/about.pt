@@ -47,6 +47,32 @@
                             is "written in" Python and uses the Pyramid framework.</p>
                     </div>
                 </div>
+                <div class="row">
+                    `<div class="col rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
+                        <h4>About this website</h4>
+                        <p class="text-justify">
+                            This website is constantly evolving/changing. It started out as a WordPress site, I then decided to redo
+                            it as a static HTML site and now it is running on Python/Pyramid/uWSGI and served out via an NGINX Proxy
+                            Manager docker container.
+                        </p>
+                        <p class="text-justify">
+                            Why did I move from hither to thither? I do feel like Python is the programming language for the people. It
+                            is all well and good doing things with WordPress/PHP but if you can write a program and turn it into a "web
+                            application" with Python you have many more options available to you and there are many things that can be
+                            done. It was with that in mind that I set out to turn one of the functions that I had written, a simple
+                            <a href="/mini-scripts/weight-conversion">weight converter</a> into something that I could use online
+                            instead of in a Jupyter notebook or REPL. That is/was my first <a href="/mini-scripts">Mini-script</a> and
+                            the reason that this site now exists as it does. Whilst I certainly could have done this quite simply with
+                            Javascript and had a weight converter that did everything in the browser; it wouldn't have been as much fun
+                            as doing everything server-side on a ridiculously powerful VPS.
+                        </p>
+                        <p class="text-justify">
+                            From here the plan is to re-work the backend. The implementation as it is now is not as tidy as it should
+                            be and I will remove those issues before progressing to something with more features. Unless, of course,
+                            I think of another Mini-Script that would be useful to have and simple to code.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <section>

@@ -11,6 +11,7 @@ dist/
 nosetests.xml
 env*/
 tmp/
+.idea/
 Data.fs*
 *.sublime-project
 *.sublime-workspace
