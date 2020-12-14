@@ -10,8 +10,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col d-flex flex-column justify-content-center align-items-center">
-                        <h1 class="text-white lead">Joe Robinson</h1>
-                        <p class="lead text-white text-justify">
+                        <h1 class="text-white display-4 shadow-text">Joe Robinson</h1>
+                        <p class="lead text-white text-justify shadow-text">
                             Please don't judge this too harshly, I am working on it constantly and
                             I would consider this an alpha version that I have put together to get
                             started with a Python powered website/webapp running on the Pyramid framework.
