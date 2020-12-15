@@ -70,10 +70,12 @@ footer {
 .footer-links {
   color: #2c3e50;
   font-size: 0.9rem;
+  mix-blend-mode: difference;
   text-decoration: none;
 }
 
 .footer-links:hover {
+  mix-blend-mode: overlay;
   text-decoration: none;
 }
 
@@ -81,10 +83,12 @@ footer {
   color: #2c3e50;
   font-size: 0.8rem;
   margin-left: 5px;
+  mix-blend-mode: difference;
 }
 
 .sub-footer-links:hover {
   text-decoration: none;
+  mix-blend-mode: overlay;
 }
 
 /***********************************/

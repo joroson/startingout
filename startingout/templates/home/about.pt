@@ -5,22 +5,52 @@
 <div metal:fill-slot="additional-css" tal:omit-tag=""><!-- additional page CSS --></div>
 
     <main metal:fill-slot="content">
-
         <section>
             <div class=container>
-                <div class="row d-flex flex-column flex-md-row rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
+                <div class="row d-flex flex-column flex-md-row">
                     <div class="col d-flex justify-content-center justify-content-md-end">
-                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/coding.svg')}">
+                        <img class="img-fluid" src="${request.static_url('startingout:static/img/home/about/about_coding_2.svg')}" alt="Website Layout">
+                    </div>
+                    <div class="col d-flex flex-column justify-content-center">
+                        <h3 class="text-center text-md-left">About this website</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    `<div class="col">
+                        <p class="text-justify">
+                            This website is constantly evolving/changing. It started out as a WordPress site, I then decided to redo
+                            it as a static HTML site and now it is running on Python/Pyramid/uWSGI and served out via an NGINX Proxy
+                            Manager docker container.
+                        </p>
+                        <p class="text-justify">
+                            Why did I move from hither to thither? I do feel like Python is the programming language for the people. It
+                            is all well and good doing things with WordPress/PHP but if you can write a program and turn it into a "web
+                            application" with Python you have many more options available to you and there are many things that can be
+                            done. It was with that in mind that I set out to turn one of the functions that I had written, a simple
+                            <a href="/mini-scripts/weight-conversion">weight converter</a> into something that I could use online
+                            instead of in a Jupyter notebook or REPL. That is/was my first <a href="/mini-scripts">Mini-script</a> and
+                            the reason that this site now exists as it does. Whilst I certainly could have done this quite simply with
+                            Javascript and had a weight converter that did everything in the browser; it wouldn't have been as much fun
+                            as doing everything server-side on a ridiculously powerful VPS.
+                        </p>
+                        <p class="text-justify">
+                            From here the plan is to re-work the backend. The implementation as it is now is not as tidy as it should
+                            be and I will remove those issues before progressing to something with more features. Unless, of course,
+                            I think of another Mini-Script that would be useful to have and simple to code.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col d-flex justify-content-center justify-content-md-end">
+                        <img class="img-fluid" src="${request.static_url('startingout:static/img/home/about/about_coding_1.svg')}" alt="Man coding on a laptop">
                     </div>
                     <div class="col d-flex flex-column justify-content-center">
                         <h2 class="text-center text-md-left">About me</h2>
                         <h4 class="text-center text-md-left">It started out as a brief overview. Honest.</h4>
                     </div>
                 </div>
-            </div>
-            <div class=container>
-                <div class=row>
-                    <div class="col rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
+                <div class="row">
+                    <div class="col">
                         <p class=text-justify>
                             I am a father and husband living in Bognor Regis which is located on the south coast of England.
                         </p>
@@ -47,38 +77,12 @@
                             is "written in" Python and uses the Pyramid framework.</p>
                     </div>
                 </div>
-                <div class="row">
-                    `<div class="col rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
-                        <h4>About this website</h4>
-                        <p class="text-justify">
-                            This website is constantly evolving/changing. It started out as a WordPress site, I then decided to redo
-                            it as a static HTML site and now it is running on Python/Pyramid/uWSGI and served out via an NGINX Proxy
-                            Manager docker container.
-                        </p>
-                        <p class="text-justify">
-                            Why did I move from hither to thither? I do feel like Python is the programming language for the people. It
-                            is all well and good doing things with WordPress/PHP but if you can write a program and turn it into a "web
-                            application" with Python you have many more options available to you and there are many things that can be
-                            done. It was with that in mind that I set out to turn one of the functions that I had written, a simple
-                            <a href="/mini-scripts/weight-conversion">weight converter</a> into something that I could use online
-                            instead of in a Jupyter notebook or REPL. That is/was my first <a href="/mini-scripts">Mini-script</a> and
-                            the reason that this site now exists as it does. Whilst I certainly could have done this quite simply with
-                            Javascript and had a weight converter that did everything in the browser; it wouldn't have been as much fun
-                            as doing everything server-side on a ridiculously powerful VPS.
-                        </p>
-                        <p class="text-justify">
-                            From here the plan is to re-work the backend. The implementation as it is now is not as tidy as it should
-                            be and I will remove those issues before progressing to something with more features. Unless, of course,
-                            I think of another Mini-Script that would be useful to have and simple to code.
-                        </p>
-                    </div>
-                </div>
             </div>
         </section>
         <section>
             <div class=container>
-                <div class=row>
-                    <div class="col rounded-sm p-sm-1 p-md-2 p-lg-3 p-xl-4 mx-xs-1 mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5">
+                <div class="row">
+                    <div class="col">
                         <h2 class=text-center>Certifications</h2>
                     </div>
                 </div>
@@ -104,22 +108,22 @@
                             <div class=container>
                                 <div class=row>
                                     <div class=col>
-                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/Verba_Certificate_Diploma.png')}">
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/Verba_Certificate_Diploma.png')}" alt="Verba Voice Recording Certificate">
                                     </div>
                                 </div>
                                 <div class=row>
                                     <div class=col>
-                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/CCNP_certificate.png')}">
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/CCNP_certificate.png')}" alt="Cisco Certified Network Professional Certificate">
                                     </div>
                                 </div>
                                 <div class=row>
                                     <div class=col>
-                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/CCNA_Security_certificate.png')}">
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/CCNA_Security_certificate.png')}" alt="Cisce Certified Network Associate Security Certificate">
                                     </div>
                                 </div>
                                 <div class=row>
                                     <div class=col>
-                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/CCNA_certificate.png')}">
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/CCNA_certificate.png')}" alt="Cisco Certified Network Associate Certificate">
                                     </div>
                                 </div>
                             </div>
@@ -139,22 +143,22 @@
                             <div class=container>
                                 <div class=row>
                                     <div class=col>
-                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/intro_to_git.jpg')}">
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/intro_to_git.jpg')}" alt="ITPro.tv Intro to Git Certificate">
                                     </div>
                                 </div>
                                 <div class=row>
                                     <div class=col>
-                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/pfSense-2-4-4_2019.jpg')}">
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/pfSense-2-4-4_2019.jpg')}" alt="ITPro.tv pfSense Certificate">
                                     </div>
                                 </div>
                                 <div class=row>
                                     <div class=col>
-                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/MikroTik-Security-Engineer-with-Labs.jpg')}">
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/MikroTik-Security-Engineer-with-Labs.jpg')}" alt="Udemy MikroTik Security Engineer Certificate">
                                     </div>
                                 </div>
                                 <div class=row>
                                     <div class=col>
-                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/udemy_python_network_programming.jpg')}">
+                                        <img class=img-fluid src="${request.static_url('startingout:static/img/home/about/udemy_python_network_programming.jpg')}" alt="Udemy Python Network Programming">
                                     </div>
                                 </div>
                             </div>
@@ -164,39 +168,43 @@
             </div>
         </section>
         <section>
-            <div class=container>
-                <div class=row>
-                    <div class="col rounded-sm py-2 p-sm-2 p-lg-3 p-xl-4 m-xs-1 m-sm-2 m-md-3 m-lg-4 m-xl-5 bg-light">
+            <div class="container my-2 py-3 rounded-sm bg-light">
+                <div class="row">
+                    <div class="col">
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <h2>Get in touch</h2>
                             <h4>...if you want</h4>
                         </div>
                         <form class="d-flex flex-column" action="https://submit-form.com/W7W0yFYg" target="_self">
-                            <div class=form-row>
+                            <div class="form-row">
                                 <div class="col-12 col-md-6 col-lg-4">
-                                    <div class=form-group>
-                                        <label for=first-name>First Name</label>
-                                        <input class=form-control type=text required="" name=first-name>
+                                    <div class="form-group">
+                                        <label for="first-name">First Name</label>
+                                        <input class="form-control" type="text" name="first-name" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-4">
-                                    <div class=form-group>
-                                        <label for=last-name>Last Name</label>
-                                        <input class=form-control type=text required="" name=last-name>
+                                    <div class="form-group">
+                                        <label for="last-name">Last Name</label>
+                                        <input class="form-control" type="text" name="last-name" required>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4">
-                                    <div class=form-group>
-                                        <label for=email>Email</label>
-                                        <input class=form-control type=email id=tm-validator name=email_field required="">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input class="form-control" type="email" id="tm-validator" name="email" required>
                                     </div>
                                 </div>
                             </div>
-                            <div class=form-group>
-                                <label for=message>Message</label>
-                                <textarea class=form-control name=message rows=10 required=""></textarea>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" name="message" rows="5" required></textarea>
+                                    </div>
+                                </div>
                             </div>
-                            <button class="btn btn-primary btn-block btn-lg text-capitalize mx-auto" id=form-submit type=submit>Submit</button>
+                            <button class="btn btn-primary btn-block btn-lg text-capitalize mx-auto" id="form-submit" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
