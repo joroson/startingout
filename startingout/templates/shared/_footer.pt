@@ -13,7 +13,7 @@
             <a class="sub-footer-links" href="/account/register">Register</a>
         </div>
         <div class="d-flex flex-grow-1 justify-content-end">
-            <img src="https://bigheads.io/svg?accessory=none&amp;body=chest&amp;circleColor=blue&amp;clothing=shirt&amp;clothingColor=red&amp;eyebrows=raised&amp;eyes=normal&amp;faceMask=false&amp;faceMaskColor=white&amp;facialHair=none&amp;graphic=none&amp;hair=short&amp;hairColor=brown&amp;hat=none&amp;hatColor=white&amp;lashes=false&amp;lipColor=red&amp;mask=true&amp;mouth=openSmile&amp;skinTone=light" loading="lazy"/>
+            <img height="200" src="${request.static_url('startingout:static/img/shared/bighead.png')}" loading="lazy"/>
         </div>
     </footer>
 </div>

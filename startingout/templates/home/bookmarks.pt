@@ -4,11 +4,11 @@
 
 <div metal:fill-slot="additional-css" tal:omit-tag=""><link rel="stylesheet" href="${request.static_url('startingout:static/css/home/bookmarks.css')}"></div>
 
-    <main metal:fill-slot="content" class="min-vh-100">
+    <main metal:fill-slot="content">
         <section class="link-container my-2">
             <div class=container>
                 <div class=row>
-                    <div class="col m-2 p-2 p-md-4" style="border-radius: 7px;box-shadow: 3px 3px 10px 0px #222222;">
+                    <div class="col m-2 p-2 p-md-4" style="border-radius: 7px;box-shadow: 3px 3px 10px 0 #222222;">
                         <h2 class=section-heading style="margin: 3px;">Filter by:</h2>
                         <div class=filter-list>
                             <button class="btn filter-button" type=button data-filter=.10kindstech>10 Kinds Tech</button>
@@ -147,7 +147,7 @@
                             <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://exercism.io/','_blank');">PyExercises - Exercism</a>
                             <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://www.practicepython.org/','_blank');">PyExercises - Practice Python</a>
                             <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://pythonvoyage.com/','_blank');">Python Voyage</a>
-                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://csdojo.io/','_blank');&quot;">Python CS Dojo</a>
+                            <a class="btn bookmarks-button development learning python" role=button onclick="window.open('https://csdojo.io/','_blank');">Python CS Dojo</a>
                             <a class="btn bookmarks-button development python" role=button onclick="window.open('https://blog.jetbrains.com/pycharm/','_blank');">PyCharm Blog</a>
                             <a class="btn bookmarks-button development python" role=button onclick="window.open('https://pypi.org/','_blank');">PyPI</a>
                             <a class="btn bookmarks-button cool misc" role=button onclick="window.open('https://www.qrcode-monkey.com/','_blank');">QR Code Monkey</a>
@@ -230,7 +230,7 @@
         </section>
     </main>
     <div metal:fill-slot="additional-js" tal:omit-tag="">
-        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="${request.static_url('startingout:static/js/isotope.js')}"></script>
         <script>
             var $container = jQuery('.isotope-content');
 
