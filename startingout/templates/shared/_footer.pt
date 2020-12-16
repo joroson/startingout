@@ -1,19 +1,25 @@
 <div metal:define-macro="footer" tal:omit-tag="">
-    <footer class="footer-grid">
-        <div style="display: flex; flex-direction: column;">
-            <a class="footer-links" href="#">Home</a>
-            <a class="footer-links" href="#">Bookmarks</a>
-            <a class="footer-links" href="#">About</a>
-        </div>
-        <div style="display: flex; flex-direction: column;">
-            <a class="footer-links" href="/mini-scripts">Mini-scripts</a>
-            <a class="sub-footer-links" href="/mini-scripts/weight-conversion">Weight Conversion</a>
-            <a class="footer-links" href="/account">Account</a>
-            <a class="sub-footer-links" href="/account/login">Login</a>
-            <a class="sub-footer-links" href="/account/register">Register</a>
-        </div>
-        <div class="d-flex flex-grow-1 justify-content-end">
-            <img height="200" src="${request.static_url('startingout:static/img/shared/bighead.png')}" loading="lazy"/>
+    <footer>
+        <div class="container-fluid">
+            <div class="row py-2">
+                <div class="col-12 col-md-4 d-flex flex-column">
+                    <a class="footer-links" href="/">Home</a>
+                    <a class="footer-links" href="/bookmarks">Bookmarks</a>
+                    <a class="footer-links" href="/about">About</a>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column">
+                    <a class="footer-links" href="/mini-scripts">Mini-scripts</a>
+                    <a class="sub-footer-links" href="/mini-scripts/weight-conversion">Weight Conversion</a>
+                    <a class="footer-links" href="/account">Account</a>
+                    <a class="sub-footer-links" href="/account/login">Login</a>
+                    <a class="sub-footer-links" href="/account/register">Register</a>
+                </div>
+                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
+                    <a href="https://www.linkedin.com/in/joe-robinson/" target="_blank">
+                        <img src="${request.static_url('startingout:static/img/shared/bighead.png')}" loading="lazy" height="100">
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 </div>
