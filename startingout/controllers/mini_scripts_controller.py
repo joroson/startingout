@@ -55,7 +55,8 @@ def weight_conversion_post(request: Request):
 
         info()
 
-        print(f"output_sto = {con_lbs_st}\noutput_slb = {con_lbs_lb}\noutput_ozs = {con_lbs_oz}\noutput_kgs = {con_lbs_kg}\ninput_pou = {lbs_float}")
+        print(
+            f"output_sto = {con_lbs_st}\noutput_slb = {con_lbs_lb}\noutput_ozs = {con_lbs_oz}\noutput_kgs = {con_lbs_kg}\ninput_pou = {lbs_float}")
 
         return {
             'output_lbs': None,
@@ -120,4 +121,3 @@ def weight_conversion_post(request: Request):
     else:
         info()
         return {}
-
