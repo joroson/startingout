@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
                     <a href="https://www.linkedin.com/in/joe-robinson/" target="_blank">
-                        <img src="${request.static_url('startingout:static/img/shared/bighead.png')}" loading="lazy" height="100">
+                        <img src="https://media.10kinds.tech/file/rbnsn/bighead_svg.svg" loading="lazy" height="100">
                     </a>
                 </div>
             </div>

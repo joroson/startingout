@@ -6,7 +6,7 @@
 
     <div metal:fill-slot="content" tal:omit-tag="">
 
-        <div id="home-hero" class="container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div id="home-hero" class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100">
             <div role="alert" class="alert alert-info text-white">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
                         aria-hidden="true">×</span></button>

@@ -6,18 +6,18 @@
 
     <main metal:fill-slot="content">
         <section>
-            <div class=container>
+            <div class="container">
                 <div class="row d-flex flex-column flex-md-row">
                     <div class="col d-flex justify-content-center justify-content-md-end">
                         <img class="img-fluid" src="${request.static_url('startingout:static/img/home/about/about_coding_2.svg')}" alt="Website Layout">
                     </div>
                     <div class="col d-flex flex-column justify-content-center">
-                        <h3 class="text-center text-md-left">About this website</h3>
+                        <h3 class="text-center text-md-left shadow-text">About this website</h3>
                     </div>
                 </div>
                 <div class="row">
                     `<div class="col">
-                        <p class="text-justify">
+                        <p class="text-justify shadow-text">
                             This website is constantly evolving/changing. It started out as a WordPress site, I then decided to redo
                             it as a static HTML site and now it is running on Python/Pyramid/uWSGI and served out via an NGINX Proxy
                             Manager docker container.
