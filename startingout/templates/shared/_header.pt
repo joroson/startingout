@@ -1,7 +1,7 @@
 <div metal:define-macro="header" tal:omit-tag="">
         <header>
             <nav class="navbar navbar-light navbar-expand-sm">
-                <div class="container-fluid"><a class="navbar-brand" href="/"><img src="${request.static_url('startingout:static/img/joe.rbnsn.uk_logo.svg')}" height="35"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="container"><a class="navbar-brand" href="/"><img src="${request.static_url('startingout:static/img/joe.rbnsn.uk_logo.svg')}" height="35"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
